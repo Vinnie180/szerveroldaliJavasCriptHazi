@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autók és sofőrök</title>
+
+    <style>
+        .container {
+          display: flex;
+          align-items: center;
+        }
+    
+        .heading {
+            font-size: 24px; 
+            font-weight: bold; 
+            margin-right: 10px;
+        }
+
+        .image {           
+            width: 20px; /* Set the width of the image */
+            height: auto; /* Maintain the aspect ratio */
+        }
+      </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Autók</h1>
+        <button class="button">Új</button>
+    </div>
+
+    <table border="1">
+        <!-- a table with the headers Rendszám, Márka, Hossz, Max fő, csomagtér. The table lines are visible. There are -->
+        <thead>
+            <th>Utasok</th>
+            <th>Rendszám</th>
+            <th>Márka</th>
+            <th>Hossz</th>
+            <th>Max Hossz</th>
+            <th>Csomagtér</th>
+            <th>Szerkesztés</th>
+            <th>Törlés</th>
+        </thead>
+        <tbody>
+            <th><button type="button">Utasok</button></th>
+            <th>AMG-563</th>
+            <th>Mercedes</th>
+            <th>5.05 m</th>
+            <th>5</th>
+            <th>461 l</th>
+            <th><button type="button"><img class="image" src="pencil.svg" alt="pencil edit icon"/></button></th>
+            <th><button type="button"><img class="image" src="trash.svg" alt="trash delete icon"/></button></th>
+        </tbody>
+        <tbody>
+            <th><button type="button">Utasok</button></th>
+            <th>...</th>
+            <th>...</th>
+            <th>...</th>
+            <th>...</th>
+            <th>...</th>
+            <th><button type="button"><img class="image" src="pencil.svg" alt="pencil edit icon"/></button></th>
+            <th><button type="button"><img class="image" src="trash.svg" alt="trash delete icon"/></button></th>
+        </tbody>
+    </table>
+</body>
+</html>
